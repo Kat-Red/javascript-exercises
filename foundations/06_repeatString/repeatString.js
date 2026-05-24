@@ -1,16 +1,11 @@
-const repeatString = function(string, n) {
-	let repeated = '';
-	if(n >= 0){
-		for (let i = 0; i < n; i++)
-		{
-			repeated += string;
-		}
-		return repeated;
-	}
-	else 
-		return "ERROR";
+const repeatString = function(str, n) {
+	if(n<0)return "ERROR";
+	let repeated = "";
+	for(let i = 0; i<n; i++)
+		repeated+=str;
+	return repeated;
 };
-repeatString('hello', 3)
+repeatString('hello', 3);
 
 // Do not edit below this line
 module.exports = repeatString;
